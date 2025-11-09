@@ -5,18 +5,16 @@ link of video -https://drive.google.com/file/d/1HUlk8x9PpxlTvO5wt9YGbQDBzKSxo6D4
 
 This is a submission for the Learnato Hackathon. It is a full-stack discussion forum microservice built with the MERN stack (using an in-memory database) and styled with Tailwind CSS.
 
-[cite_start]**Theme:** "Empower learning through conversation." [cite: 4]
-
----
+## [cite_start]**Theme:** "Empower learning through conversation."
 
 ## 🚀 Core Features (MVP) [cite: 20]
 
-**Create Posts:** Users can add a new question or topic[cite: 21].
-git**List Posts:** All posts are viewable and sorted by votes[cite: 21].
-**View Post & Replies:** Users can click a post to see its details and all replies[cite: 21].
-**Add Reply:** Users can add a reply beneath a post[cite: 21].
-**Upvote Post:** Users can upvote any post[cite: 21].
-**Responsive UI:** The application works on both desktop and mobile[cite: 21].
+**Create Posts:** Users can add a new question or topic
+git**List Posts:** All posts are viewable and sorted by votes
+**View Post & Replies:** Users can click a post to see its details and all replies.
+**Add Reply:** Users can add a reply beneath a post
+**Upvote Post:** Users can upvote any post
+**Responsive UI:** The application works on both desktop and mobile
 
 ## 🛠️ Tech Stack
 
