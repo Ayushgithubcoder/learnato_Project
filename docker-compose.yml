@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./learnato-backend
+      dockerfile: Dockerfile
+    container_name: learnato-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+    networks:
+      - learnato-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./learnato-frontend
+      dockerfile: Dockerfile
+      args:
+        # Change this to your backend URL if accessing from a different machine
+        # For local development, use http://localhost:5000
+        # For production, use your actual backend URL
+        - VITE_API_BASE_URL=http://localhost:5000
+    container_name: learnato-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - learnato-network
+    restart: unless-stopped
+
+networks:
+  learnato-network:
+    driver: bridge
+
