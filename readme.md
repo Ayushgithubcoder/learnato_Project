@@ -1,3 +1,6 @@
+-->
+link of video -https://drive.google.com/file/d/1HUlk8x9PpxlTvO5wt9YGbQDBzKSxo6D4/view?usp=sharing
+
 # Learnato Hackathon - Discussion Forum
 
 This is a submission for the Learnato Hackathon. It is a full-stack discussion forum microservice built with the MERN stack (using an in-memory database) and styled with Tailwind CSS.
@@ -9,7 +12,7 @@ This is a submission for the Learnato Hackathon. It is a full-stack discussion f
 ## 🚀 Core Features (MVP) [cite: 20]
 
 **Create Posts:** Users can add a new question or topic[cite: 21].
-**List Posts:** All posts are viewable and sorted by votes[cite: 21].
+git**List Posts:** All posts are viewable and sorted by votes[cite: 21].
 **View Post & Replies:** Users can click a post to see its details and all replies[cite: 21].
 **Add Reply:** Users can add a reply beneath a post[cite: 21].
 **Upvote Post:** Users can upvote any post[cite: 21].
